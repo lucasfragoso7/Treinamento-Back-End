@@ -11,5 +11,10 @@ public class Sala {
 	 private Short capacidade;
 	 private Integer numero;
 	 private boolean disponibolidade;
+	 
+	public Sala() 
+		{
+			
+		}
 
 }

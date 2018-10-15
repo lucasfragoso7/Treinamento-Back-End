@@ -15,5 +15,9 @@ public class Turma {
 	
 	private short periodo;
 	
+	public Turma() 
+	{
+		
+	}
 
 }

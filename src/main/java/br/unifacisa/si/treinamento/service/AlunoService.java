@@ -16,8 +16,5 @@ public class AlunoService {
 		return repository.insert(aluno);
 	}
 	
-	public Aluno atulizaAluno(Aluno aluno) 
-	{
-	}
 
 }

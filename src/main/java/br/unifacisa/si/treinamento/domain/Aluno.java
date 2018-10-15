@@ -10,4 +10,8 @@ public class Aluno {
 	private String nome;
 	private long matricula;
 
+	public Aluno() 
+	{
+		
+	}
 }
