@@ -11,9 +11,11 @@ public class SalaService {
 	@Autowired
 	private SalaRepository repository;
 	
-	public Sala criarAluno(Sala sala) 
+	public void criarAluno(Sala sala) 
 	{
-		return repository.insert(sala);
+		if (repository.existsById(sala.getId()) == false)
+		{
+			repository.insert(sala);
+		}
 	}
-
 }

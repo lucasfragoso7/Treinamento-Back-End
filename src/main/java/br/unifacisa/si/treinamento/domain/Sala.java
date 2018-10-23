@@ -12,9 +12,9 @@ public class Sala {
 	 private Integer numero;
 	 private boolean disponibolidade;
 	 
-	public Sala() 
-		{
-			
-		}
+	public String getId()
+	{
+		return id;
+	}
 
 }

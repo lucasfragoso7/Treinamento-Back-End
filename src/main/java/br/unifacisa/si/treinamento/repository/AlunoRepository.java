@@ -6,4 +6,6 @@ import br.unifacisa.si.treinamento.domain.Aluno;
 
 public interface AlunoRepository extends MongoRepository<Aluno,String> {
 
+	public Aluno findByMatricula(String Matricula);
+	
 }
