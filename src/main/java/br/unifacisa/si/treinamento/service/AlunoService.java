@@ -1,20 +1,20 @@
 package br.unifacisa.si.treinamento.service;
 
+
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+
 
 import br.unifacisa.si.treinamento.domain.Aluno;
 import br.unifacisa.si.treinamento.repository.AlunoRepository;
 
 @Service
-public class AlunoService {
+public class AlunoService extends ServiceGeral<Aluno>
+{
 	@Autowired
-	private AlunoRepository repository;
-	
-	public Aluno criarAluno(Aluno aluno) 
+	public AlunoService(AlunoRepository repository) 
 	{
-		return repository.insert(aluno);
+		super(repository);
 	}
-	
-
 }

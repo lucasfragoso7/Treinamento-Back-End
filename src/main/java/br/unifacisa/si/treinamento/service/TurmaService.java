@@ -1,19 +1,21 @@
 package br.unifacisa.si.treinamento.service;
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import br.unifacisa.si.treinamento.domain.Turma;
+
 import br.unifacisa.si.treinamento.repository.TurmaRepository;
 
 @Service
-public class TurmaService{
+public class TurmaService extends ServiceGeral<Turma>
+{
 	@Autowired
-	private TurmaRepository repository;
-	
-	public Turma criarAluno(Turma turma) 
+	public TurmaService(TurmaRepository repository) 
 	{
-		return repository.insert(turma);
+		super(repository);
 	}
+	
 
 }
